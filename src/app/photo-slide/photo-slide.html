@@ -1,0 +1,24 @@
+<section class="photo-slide">
+  <div class="slide-container">
+    @for (url of topPhotoUrls(); track $index){
+      <div class="slide">
+        <img 
+          [ngSrc]="url" 
+          [alt]="'Photo ' + ( $index % (topPhotoUrls().length/2) + 1 )" 
+          width="300" 
+          height="300"/>
+      </div>
+    }
+  </div>
+  <div class="slide-container bottom">
+    @for (url of bottomPhotoUrls(); track $index){
+      <div class="slide">
+        <img 
+          [ngSrc]="url" 
+          [alt]="'Photo ' + ( $index % (bottomPhotoUrls().length/2) + 1 )" 
+          width="300" 
+          height="300"/>
+      </div>
+    }
+  </div>
+</section>

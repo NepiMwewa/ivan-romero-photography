@@ -1,0 +1,37 @@
+.photo-slide {
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.photo-slide .slide-container{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  animation: slideAnimationTop 20s linear infinite;
+}
+.photo-slide .slide-container.bottom {
+  animation: slideAnimationBottom 20s linear infinite;
+}
+.photo-slide .slide-container .slide {
+  flex: 0 0 300px;
+  height: 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes slideAnimationTop {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-300px * 6)); } /* Move exactly 6 slides (1800px) */
+}
+@keyframes slideAnimationBottom {
+  from { transform: translateX(calc(-300px * 6)); } /* Start at -6 slides */
+  to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-slide .slide-container {
+    animation: none;
+  }
+}

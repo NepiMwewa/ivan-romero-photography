@@ -1,0 +1,21 @@
+header.main-header {
+  background-color: #333;
+  color: #fff;
+}
+header.main-header > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.main-header > div > section.left-section {
+
+}
+header.main-header > div > section.right-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+header.main-header a {
+  color: white;
+}
