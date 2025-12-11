@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { Layout } from './layout/layout';
+import { Layout } from './features/layout/layout';
 
 export const routes: Routes = [
   {
@@ -8,23 +8,23 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        loadComponent: () => import('./home/home').then(m => m.Home),
+        loadComponent: () => import('./features/home/home').then(m => m.Home),
       },
       {
         path: 'get-started',
-        loadComponent: () => import('./get-started/get-started').then(m => m.GetStarted),
+        loadComponent: () => import('./features/get-started/get-started').then(m => m.GetStarted),
       },
       {
         path: 'portfolio',
-        loadComponent: () => import('./portfolio/portfolio').then(m => m.Portfolio),
+        loadComponent: () => import('./features/portfolio/portfolio').then(m => m.Portfolio),
       },
       {
         path: 'about',
-        loadComponent: () => import('./about/about').then(m => m.About),
+        loadComponent: () => import('./features/about/about').then(m => m.About),
       },
       {
         path: 'contact',
-        loadComponent: () => import('./contact/contact').then(m => m.Contact),
+        loadComponent: () => import('./features/contact/contact').then(m => m.Contact),
       },
     ],
   }

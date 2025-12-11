@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AboutSection } from './about-section/about-section';
+import { AboutSection } from '../../shared/about-section/about-section';
 import { HeroSection } from './hero-section/hero-section';
-import { PhotoSlide } from '../photo-slide/photo-slide';
+import { PhotoSlide } from '../../shared/photo-slide/photo-slide';
 
 @Component({
   selector: 'app-home',
