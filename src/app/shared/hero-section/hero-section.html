@@ -6,11 +6,11 @@
     </div>
     <div class="right-hero-div">
         <div class="hero-text-div">
-            <h1>Ivan Romero</h1>
-            <h2>Photography & Videography</h2>
+            <h1>{{title}}</h1>
+            <h2>{{subtitle}}</h2>
             <div class="hero-buttons-div">
-                <a>Book A Session</a>
-                <a>View Portfolio</a>
+                <a [routerLink]="mainButtonLink">{{mainButtonText}}</a>
+                <a [routerLink]="secondaryButtonLink">{{secondaryButtonText}}</a>
             </div>
         </div>
         <figure>

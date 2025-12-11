@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HamburgerMenu } from './hamburger-menu/hamburger-menu';
+import { HamburgerMenu } from '../../../shared/hamburger-menu/hamburger-menu';
 
 @Component({
   selector: 'app-header',

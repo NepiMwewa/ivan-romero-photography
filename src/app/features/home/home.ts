@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AboutSection } from '../../shared/about-section/about-section';
-import { HeroSection } from './hero-section/hero-section';
+import { HeroSection } from '../../shared/hero-section/hero-section';
 import { PhotoSlide } from '../../shared/photo-slide/photo-slide';
 
 @Component({
