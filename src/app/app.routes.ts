@@ -14,6 +14,18 @@ export const routes: Routes = [
         path: 'get-started',
         loadComponent: () => import('./get-started/get-started').then(m => m.GetStarted),
       },
+      {
+        path: 'portfolio',
+        loadComponent: () => import('./portfolio/portfolio').then(m => m.Portfolio),
+      },
+      {
+        path: 'about',
+        loadComponent: () => import('./about/about').then(m => m.About),
+      },
+      {
+        path: 'contact',
+        loadComponent: () => import('./contact/contact').then(m => m.Contact),
+      },
     ],
   }
 ];

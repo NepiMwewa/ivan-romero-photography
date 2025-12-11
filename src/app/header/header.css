@@ -13,6 +13,7 @@ header.main-header > div > section.left-section {
 header.main-header > div > section.right-section {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 2rem;
 }
 

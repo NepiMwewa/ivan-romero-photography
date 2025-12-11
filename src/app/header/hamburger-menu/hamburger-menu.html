@@ -1,0 +1,28 @@
+<div class="hamburger-menu">
+  <button 
+    class="burger-icon" 
+    [class.open]="isOpen()" 
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="isOpen()"
+    [attr.aria-controls]="'menu-' + menuId"
+    aria-label="Toggle navigation menu"
+    type="button">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+  </button>
+
+  <section 
+    #menuContainer
+    class="menu-container" 
+    [class.open]="isOpen()"
+    [id]="'menu-' + menuId"
+    role="dialog"
+    [attr.aria-hidden]="!isOpen()">
+    <nav aria-label="Main navigation">
+      <a href="/" (keydown)="onMenuKeydown($event)">Home</a>
+      <a href="/portfolio" (keydown)="onMenuKeydown($event)">Portfolio</a>
+      <a href="/about" (keydown)="onMenuKeydown($event)">About</a>
+      <a href="/contact" (keydown)="onMenuKeydown($event)">Contact</a>
+    </nav>
+  </section>
+</div>

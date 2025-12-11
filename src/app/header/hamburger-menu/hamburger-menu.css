@@ -1,0 +1,75 @@
+.hamburger-menu{
+    position: relative;
+  }
+.hamburger-menu .burger-icon{
+    padding: 12px 5px 5px 5px;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 30px;
+}
+.hamburger-menu .burger-icon:hover {
+    cursor: pointer;
+}
+.hamburger-menu .burger-icon:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+.hamburger-menu .burger-icon .bar1,
+.hamburger-menu .burger-icon .bar2{
+    background-color: #fff;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.hamburger-menu .burger-icon .bar1{
+    transform: rotate( -15deg) translate(1px, -6px);
+}
+.hamburger-menu .burger-icon.open{
+    .bar1{
+        transform: rotate(-45deg) translate(1px, -3px);
+    }
+    .bar2{
+        transform: rotate(45deg) translate(-6px, -3px);
+    }
+}
+
+.hamburger-menu .menu-container{
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.hamburger-menu .menu-container.open{
+    display: block;
+}
+
+.hamburger-menu .menu-container nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger-menu .menu-container nav a{
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+.hamburger-menu .menu-container nav a:last-child{
+    border-bottom: none;
+}
+.hamburger-menu .menu-container nav a:hover{
+    background-color: #444;
+}
+.hamburger-menu .menu-container nav a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+}
