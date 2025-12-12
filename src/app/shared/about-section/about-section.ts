@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './about-section.css',
 })
 export class AboutSection {
-
+  aboutTitle = 'About Me';
+  aboutDescription = 'This is a description about me.';
 }
