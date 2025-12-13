@@ -17,6 +17,10 @@ header.main-header > div > section.right-section {
   gap: 2rem;
 }
 
+header.main-header h1 a{
+  text-decoration: none;
+}
+
 header.main-header a {
   color: white;
 }

@@ -2,7 +2,14 @@
     <div class="about-text-div">
       <div class="inner-div">
         <h2>{{aboutTitle}}</h2>
-        <p>{{aboutDescription}}</p>
+        <h3>{{aboutDescription}}</h3>
+        <p>{{aboutParagraph}}</p>
+
+        <app-cta-button 
+          [buttonText]="'Book A Session'" 
+          [buttonLink]="'/contact'"
+          [buttonClass]="'primary'">
+        </app-cta-button>
       </div>
     </div>
     <div class="about-image-div">

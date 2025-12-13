@@ -19,10 +19,10 @@
     role="dialog"
     [attr.aria-hidden]="!isOpen()">
     <nav aria-label="Main navigation">
-      <a href="/" (keydown)="onMenuKeydown($event)">Home</a>
-      <a href="/portfolio" (keydown)="onMenuKeydown($event)">Portfolio</a>
-      <a href="/about" (keydown)="onMenuKeydown($event)">About</a>
-      <a href="/contact" (keydown)="onMenuKeydown($event)">Contact</a>
+      <a routerLink="/" (keydown)="onMenuKeydown($event)" (click)="closeMenu()">Home</a>
+      <a routerLink="/portfolio" (keydown)="onMenuKeydown($event)" (click)="closeMenu()">Portfolio</a>
+      <a routerLink="/about" (keydown)="onMenuKeydown($event)" (click)="closeMenu()">About</a>
+      <a routerLink="/contact" (keydown)="onMenuKeydown($event)" (click)="closeMenu()">Contact</a>
     </nav>
   </section>
 </div>

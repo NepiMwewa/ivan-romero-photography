@@ -17,7 +17,10 @@
       <div class="gradient-gap"></div>
       <div class="see-more-div">
         <h2>Want to see more<br> of my content?</h2>
-        <a class="button secondary" href="/portfolio">View portfolio</a>
+        <app-cta-button 
+          [buttonText]="'View Portfolio'" 
+          [buttonLink]="'/portfolio'"
+          [buttonClass]="'secondary'"></app-cta-button>
       </div>
     </section> 
 </div>
