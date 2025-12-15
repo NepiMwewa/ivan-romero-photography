@@ -4,8 +4,7 @@
         <h2>{{aboutTitle}}</h2>
         <h3>{{aboutDescription}}</h3>
         <p>{{aboutParagraph}}</p>
-
-        <app-cta-button 
+        <app-cta-button
           [buttonText]="'Book A Session'" 
           [buttonLink]="'/contact'"
           [buttonClass]="'primary'">
@@ -13,8 +12,8 @@
       </div>
     </div>
     <div class="about-image-div">
-        <figure>
-            <img>
+        <figure class="about-figure">
+            <img ngSrc="assets/images/test.webp" alt="About" width="600" height="800" priority class="about-img">
         </figure>
     </div>
 </section>

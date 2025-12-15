@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { CtaButton } from "../../core/components/cta-button/cta-button";
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-about-section',
-  imports: [CtaButton],
+  imports: [CtaButton, NgOptimizedImage],
   templateUrl: './about-section.html',
   styleUrl: './about-section.css',
 })
