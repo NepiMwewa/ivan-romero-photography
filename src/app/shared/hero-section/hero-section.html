@@ -1,7 +1,7 @@
 <section class="hero-section">
     <div class="left-hero-div">
         <figure>
-            <img>
+            <img ngSrc="assets/images/test.webp" alt="Hero Image" width="600" height="800" priority class="hero-img">
         </figure>
     </div>
     <div class="right-hero-div">
@@ -9,8 +9,16 @@
             <h1>{{title}}</h1>
             <h2>{{subtitle}}</h2>
             <div class="hero-buttons-div">
-                <a [routerLink]="mainButtonLink">{{mainButtonText}}</a>
-                <a [routerLink]="secondaryButtonLink">{{secondaryButtonText}}</a>
+                <app-cta-button
+                    [buttonText]="'Book A Session'"
+                    [buttonLink]="'/contact'"
+                    [buttonClass]="'secondary'">
+                </app-cta-button>
+                <app-cta-button
+                    [buttonText]="'View Portfolio'"
+                    [buttonLink]="'/portfolio'"
+                    [buttonClass]="'secondary'">
+                </app-cta-button>
             </div>
         </div>
         <figure>

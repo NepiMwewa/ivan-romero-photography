@@ -2,7 +2,6 @@
     color: #ccc;
     display: flex;
     justify-content: space-between;
-    background-color: #333;
 }
 
 .hero-section .left-hero-div{
@@ -13,4 +12,8 @@
 }
 .hero-section .right-hero-div .hero-text-div{
 
+}
+.hero-section .hero-buttons-div{
+    display: flex;
+    gap: 16px;
 }

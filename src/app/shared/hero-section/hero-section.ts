@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CtaButton } from "../../core/components/cta-button/cta-button";
 
 @Component({
   selector: 'app-hero-section',
-  imports: [RouterModule],
+  imports: [RouterModule, CtaButton],
   templateUrl: './hero-section.html',
   styleUrl: './hero-section.css',
 })
