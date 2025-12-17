@@ -1,0 +1,12 @@
+<section #trigger class="two-pic-anim-container">
+    <div class="pic-anim pic-anim-1" [class.in-view]="inView()">
+        <figure>
+            <img [ngSrc]="image1_src" alt="Animated Picture 1" width="400" height="600" class="anim-img">
+        </figure>
+    </div>
+    <div class="pic-anim pic-anim-2" [class.in-view]="inView()">
+        <figure>
+            <img [ngSrc]="image2_src" alt="Animated Picture 2" width="400" height="600" class="anim-img">
+        </figure>
+    </div>
+</section>

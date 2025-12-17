@@ -20,7 +20,7 @@
   border-radius: 20px;
   padding: 20px;
   background: var(--background-color);
-  background: linear-gradient(0deg,var(--background-color), rgb(23, 23, 23) 100%);
+  background: linear-gradient(180deg,var(--background-color), rgb(23, 23, 23) 60%);
 }
 .about-section .about-image-div{
   width: 50%;

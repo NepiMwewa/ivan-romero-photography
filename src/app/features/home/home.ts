@@ -3,10 +3,11 @@ import { AboutSection } from '../../shared/about-section/about-section';
 import { HeroSection } from '../../shared/hero-section/hero-section';
 import { PhotoSlide } from '../../shared/photo-slide/photo-slide';
 import { CtaButton } from "../../core/components/cta-button/cta-button";
+import { TwoPicAnim } from "../../shared/two-pic-anim/two-pic-anim";
 
 @Component({
   selector: 'app-home',
-  imports: [AboutSection, HeroSection, PhotoSlide, CtaButton],
+  imports: [AboutSection, HeroSection, PhotoSlide, CtaButton, TwoPicAnim],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

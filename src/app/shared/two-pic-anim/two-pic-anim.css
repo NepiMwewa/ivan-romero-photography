@@ -1,0 +1,25 @@
+.two-pic-anim-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    overflow: hidden;
+}
+
+.two-pic-anim-container > div{
+    width: 300px;
+    transition: transform 700ms ease-out;
+    will-change: transform;
+}
+/* left and right images should move into the center as the user scrolls into view */
+.two-pic-anim-container > .pic-anim-1{
+    transform: translateX(-120%);
+}
+.two-pic-anim-container > .pic-anim-2{
+    transform: translateX(120%);
+}
+.two-pic-anim-container > .in-view.pic-anim-1,
+.two-pic-anim-container > .in-view.pic-anim-2{
+    transform: translateX(0);
+}
