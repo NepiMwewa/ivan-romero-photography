@@ -8,16 +8,18 @@
 }
 
 .two-pic-anim-container > div{
-    width: 300px;
-    transition: transform 700ms ease-out;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 1000ms ease-out;
     will-change: transform;
 }
 /* left and right images should move into the center as the user scrolls into view */
 .two-pic-anim-container > .pic-anim-1{
-    transform: translateX(-120%);
+    transform: translateX(-100vw);
 }
 .two-pic-anim-container > .pic-anim-2{
-    transform: translateX(120%);
+    transform: translateX(100vw);
 }
 .two-pic-anim-container > .in-view.pic-anim-1,
 .two-pic-anim-container > .in-view.pic-anim-2{
