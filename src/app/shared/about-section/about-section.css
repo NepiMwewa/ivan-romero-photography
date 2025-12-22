@@ -4,7 +4,7 @@
   align-items: center;
   gap: 24px;
   padding: 60px 20px;
-  color: #e6e6e6;
+  color: var(--main-color-alt);
   text-align: center;
 }
 .about-section *{
@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e6e6e6;
+  border: 1px solid var(--card-edge-color);
   border-radius: 20px;
   padding: 20px;
   background: var(--background-color);

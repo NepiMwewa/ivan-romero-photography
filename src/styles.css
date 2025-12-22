@@ -2,6 +2,20 @@
 :root{
   --background-color: #040404;
   --main-color: #ffffff;
+  --main-color-alt: #e6e6e6;
+  --cta-color: #ffd501;
+
+  --subtle-color: #bbbbbc;
+  --card-background-color: #5858589a;
+  --card-edge-color: #e6e6e6;
+  --card-drop-shadow-color: rgba(74,74,74,0.25);
+  --card-drop-shadow: 0 4px 8px 4px var(--card-drop-shadow-color);
+
+  --button-edge-cta-color: var(--cta-color);
+  --button-edge-secondary-color: var(--card-edge-color);
+
+  --header-font: 'Playfair Display', serif;
+  --body-font: 'Montserrat', sans-serif;
 }
 
 body{
