@@ -11,6 +11,14 @@
   gap: 1rem;
 }
 
+.services-content h2{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: var(--header-font);
+  font-weight: 300;
+}
+
 .services-content .second-line{
   justify-content: center;
   gap: 5%
